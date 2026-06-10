@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica N6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <div class="pantalla" id="txt-pantalla">0</div>
+        <div class="contenedor-botones">
+            <button class="btn btn-rojo" onclick="limpiar()">C</button>
+            <button class="btn btn-rojo" onclick="limpiar()">AC</button>
+            <button class="btn btn-gris" onclick="operar('%')">%</button>
+            <button class="btn btn-gris" onclick="operar('*')">X</button>
+
+            <button class="btn btn-num" onclick="agregar('7')">7</button>
+            <button class="btn btn-num" onclick="agregar('8')">8</button>
+            <button class="btn btn-num" onclick="agregar('9')">9</button>
+            <button class="btn btn-gris" onclick="operar('/')">÷</button>
+
+            <button class="btn btn-num" onclick="agregar('4')">4</button>
+            <button class="btn btn-num" onclick="agregar('5')">5</button>
+            <button class="btn btn-num" onclick="agregar('6')">6</button>
+            <button class="btn btn-gris" onclick="operar('-')">—</button>
+
+            <button class="btn btn-num" onclick="agregar('1')">1</button>
+            <button class="btn btn-num" onclick="agregar('2')">2</button>
+            <button class="btn btn-num" onclick="agregar('3')">3</button>
+            <button class="btn btn-gris btn-largo" onclick="operar('+')">+</button>
+
+            <button class="btn btn-num" onclick="agregar('.')">.</button>
+            <button class="btn btn-num" onclick="agregar('0')">0</button>
+            <button class="btn btn-gris" onclick="calcular()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
